@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varaki Services and Industries</title>
+    <link rel="stylesheet" href="solar-calculator.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="C:\Users\Bharath D\Desktop\web\Frame 29.png" alt="Logo"></a>
+        </div>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="learn.html">Services</a></li>
+            <li><a href="index.html">Customers</a></li>
+            <li><a href="solar-calculator.html">Solar Calculator</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contact-us.html">Contact</a></li>
+            <li><a href="Sign-Up.html">Sign-Up</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="calculator-container">
+            <form id="solar-calculator-form">
+                <div class="input-container">
+                    <div class="input-group">
+                        <label for="panel-capacity">Desired Solar Panel Capacity (kW):</label>
+                        <input type="number" id="panel-capacity" name="panel-capacity" placeholder="Enter panel capacity">
+                    </div>
+                    <div class="input-group">
+                        <label for="roof-area">Total Roof Area (sq ft):</label>
+                        <input type="number" id="roof-area" name="roof-area" placeholder="Enter roof area">
+                    </div>
+                    <div class="input-group">
+                        <label for="budget">Budget (Rs):</label>
+                        <input type="number" id="budget" name="budget" placeholder="Enter budget">
+                    </div>
+                </div>
+                <div class="state-selection">
+                    <p>Select State and Customer Category:</p>
+                    <div class="input-group">
+                        <label for="state">State:</label>
+                        <select id="state" name="state">
+                            <option value="">Select State</option>
+                            <option value="tamil-nadu">Tamil Nadu</option>
+                            <option value="kerala">Kerala</option>
+                            <option value="andhra-pradesh">Andhra Pradesh</option>
+                            <option value="telangana">Telangana</option>
+                            <option value="karnataka">Karnataka</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="customer-category">Customer Category:</label>
+                        <select id="customer-category" name="customer-category">
+                            <option value="">Select Category</option>
+                            <option value="residential">Residential</option>
+                            <option value="commercial">Commercial</option>
+                            <option value="industrial">Industrial</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="electricity-cost">
+                    <div class="input-group">
+                        <label for="electricity-cost">Average Electricity Cost (Rs./kWh):</label>
+                        <input type="number" id="electricity-cost" name="electricity-cost" placeholder="Enter cost">
+                    </div>
+                    <div class="cost-slider">
+                        <label for="cost-slider">Adjust Electricity Cost:</label>
+                        <input type="range" min="0.01" max="0.50" step="0.01" id="cost-slider">
+                        <span id="cost-value">0.10</span>
+                    </div>
+                </div>
+                <div class="loan-option">
+                    <p>Would you like to include loan details?</p>
+                    <div class="input-group">
+                        <input type="checkbox" id="include-loan" name="include-loan">
+                        <label for="include-loan">Yes</label>
+                    </div>
+                </div>
+                <div class="loan-inputs" style="display: none;">
+                    <p>Loan Details (optional):</p>
+                    <div class="input-group">
+                        <label for="loan-amount">Loan Amount (Rs):</label>
+                        <input type="number" id="loan-amount" name="loan-amount" placeholder="Enter loan amount">
+                    </div>
+                    <div class="input-group">
+                        <label for="loan-term">Loan Term (years):</label>
+                        <input type="number" id="loan-term" name="loan-term" placeholder="Enter loan term">
+                    </div>
+                    <div class="input-group">
+                        <label for="interest-rate">Interest Rate (%):</label>
+                        <input type="number" id="interest-rate" name="interest-rate" placeholder="Enter interest rate">
+                    </div>
+                </div>
+                <button type="button" id="calculate-button">Calculate</button>
+                <div id="results-container"></div>
+            </form>
+        </div>
+        <section class="green-divider"></section>
+        <section class="newsletter">
+            <h2>Subscribe to our <br>newsletter</h2>
+            <form action="#">
+                <input type="email" placeholder="Enter Your Email..." required>
+                <input type="submit" value="Subscribe" class="email-btn">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="footer-box">
+                <a href="index.html"><img src="C:\Users\Bharath D\Desktop\web\Frame 29.png" alt="Logo"></a>
+                <div class="social">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">Careers at Rmitha</a></li>
+                    <li><a href="#">Submit Your Application</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>View Guides</h3>
+                <ul>
+                    <li><a href="#">Terms and Conditions</a></li>
+                    <li><a href="#">Our Blogs</a></li>
+                    <li><a href="#">Our Partners</a></li>
+                    <li><a href="#">Brochure</a></li>
+                </ul>
+            </div>
+            <div class="footer-box contact">
+                <h3>Contact</h3>
+                <span>Old No:110,New No: 37, Chateau D'AMPA Building, 5th Floor, Nelson Manickam Road, Aminjikarai, Chennai - 600 030</span>
+                <span>044-4856 3101</span>
+                <span><i class='bx bxs-envelope'></i>info@rmitha.com</span>
+            </div>
+        </section>
+        <div class="copyright">
+            <p>&#169; Rmitha Power & Infra All Rights Reserved.</p>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+    <script src="solar-calculator.js"></script>
+</body>
+</html>
